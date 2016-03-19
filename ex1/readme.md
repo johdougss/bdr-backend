@@ -1,27 +1,68 @@
-# Laravel PHP Framework
+## (1) DEVELOPING A NEW TOOL (Web service/API only. No user interface needed.)
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+### User Stories
+**1) As a guest user, I want to see the items of my TO DO list, so that I can see what tasks I need to work on.**
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+**ACCEPTANCE CRITERIA:**
+* The API must be developed using REST concepts and practices.
+* The user must be able to get the list of all existing tasks.
+* The user must be able to get the details of a task.
+* In case there is no task, the API must return the following message: "Wow. You have nothing else to do. Enjoy the rest of your day!".
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+**2) As a guest user, I want to add a new item into my TO DO list, so that I can store my tasks.**
 
-## Official Documentation
+**ACCEPTANCE CRITERIA:**
+* The API must be developed using REST concepts and practices.
+* The system must not allow empty tasks. If that happens, then the API must return the following message: "Bad move! Try removing the task instead of deleting its content.".
+* The system must set the date in which the item was created automatically.
+* UUID must be automatically generated and it must be unique.
+* The task Type must only allow "shopping" or "work". If another type is passed, then the API must return the following message: "The task type you provided is not supported. You can only use shopping or work.".
 
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
+**3) As a guest user, I want to delete a task from my TO DO list, so that I can discard the tasks that I will no longer need to do.**
 
-## Contributing
+**ACCEPTANCE CRITERIA:**
+* The API must be developed using REST concepts and practices.
+* The user must be able to delete an existing task.
+* If the task isn't valid anymore, the API must return the following message: "Good news! The task you were trying to delete didn't even exist.".
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+**4) As a guest user, I want to prioritize the tasks of my TO DO list, so that I can organize my work and always deliver the most valuable things first.**
 
-## Security Vulnerabilities
+**ACCEPTANCE CRITERIA:**
+* The API must be developed using REST concepts and practices.
+* The user must be able to edit the information of an existing task.
+* If the task doesn't exist, then the API must return the following message: "Are you a hacker or something? The task you were trying to edit doesn't exist.".
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+**5) As a guest user, I want to prioritize the tasks of my TO DO list, so that I can organize my work and always deliver the most valuable things first.**
 
-## License
+**ACCEPTANCE CRITERIA:**
+* The API must be developed using REST concepts and practices.
+* The user must be able to reorder the list based on his prioritization criteria.
+* If the task shares the same priority of another existing task, the the system must be smart enough to reorder the entire list and prevent priority conflicts.
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+### EXTRA INFORMATION
+**Entity**
+```
+{
+      "uuid": "",
+      "type": "",
+      "content": "",
+      "sort_order" : 0,
+      "done" : true|false,
+      "date_created": ""
+   }
+```
+
+## (2) REFACTORING AN EXISTING CODE (Web service/API only. No user interface needed.)
+
+### User Stories
+**1) As a developer, I want to improve the quality of a legacy code by refactoring it using the best practices, so that it will be easier to maintain, it will be more readable and it will improve the quality of the system.**
+
+**ACCEPTANCE CRITERIA:**
+* The signature of the methods, as well as their inputs and outputs must be kept intact.
+* The use of PSR-1 standard is required ("http://www.php-fig.org/psr/psr-1/").
+* The use of PSR-2 standard is required ("http://www.php-fig.org/psr/psr-2/").
+* The use of PSR-4 standard is required ("http://www.php-fig.org/psr/psr-4/").
+
+### EXTRA INFORMATION
+ * File 1) CreditCard.php
+ * File 2) CreditCardTest.php
