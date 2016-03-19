@@ -1,14 +1,12 @@
 <?php
 
 Route::get('/', function () {
-    return response()->json(['api1' => route('api1.index')]);
+    return response()->json(['api' => route('api1.index')]);
 });
 
-
-//Route::group([])
 Route::group([
         'as' => 'api1.',
-        'prefix' => 'api1'
+        'prefix' => 'api'
     ]
     , function () {
         Route::get('/', ['as' => 'index', function () {

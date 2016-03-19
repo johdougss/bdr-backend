@@ -1,3 +1,50 @@
+
+
+### Requisitos
+* PHP >= 5.5.9
+* OpenSSL PHP Extension
+* PDO PHP Extension
+* Mbstring PHP Extension
+* Tokenizer PHP Extension
+* MySQL
+
+
+### Instalação
+Clonar o repositório na raiz de um servidor apache.
+```
+git clone https://github.com/johnathansantos/bdr.git
+```
+
+
+
+Acessar o seguinte endereços do seu navegador:
+
+```
+http://localhost/bdr/
+```
+
+
+### Solução:
+
+In exercise 1 is required to include the database that is in the project root
+[dump.sql](https://github.com/johnathansantos/bdr-backend/blob/master/ex1/db/dump.sql)
+```
+db/dump.sql
+```
+
+Access your browser's address:
+
+```
+http://localhost/bdr-backend/ex1/public/api
+```
+
+or access the hosted system:
+[http://backend.johdoug.com/](http://backend.johdoug.com/)
+
+
+
+
+
 ## (1) DEVELOPING A NEW TOOL (Web service/API only. No user interface needed.)
 
 ### User Stories
@@ -51,3 +98,8 @@
       "date_created": ""
    }
 ```
+
+
+
+
+--------------------------------------
