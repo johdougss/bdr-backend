@@ -1,6 +1,8 @@
+### System
+The system uses the framework laravel
+[documentation](https://laravel.com/docs/5.2)
 
-
-### Requisitos
+### Required
 * PHP >= 5.5.9
 * OpenSSL PHP Extension
 * PDO PHP Extension
@@ -9,22 +11,17 @@
 * MySQL
 
 
-### Instalação
-Clonar o repositório na raiz de um servidor apache.
+### Install
+Clone the repository to your Apache server.
 ```
-git clone https://github.com/johnathansantos/bdr.git
-```
-
-
-
-Acessar o seguinte endereços do seu navegador:
-
-```
-http://localhost/bdr/
+git clone https://github.com/johnathansantos/bdr-backend.git
 ```
 
+Composer install
 
-### Solução:
+```
+$ composer install
+```
 
 In exercise 1 is required to include the database that is in the project root
 [dump.sql](https://github.com/johnathansantos/bdr-backend/blob/master/ex1/db/dump.sql)
@@ -35,7 +32,7 @@ db/dump.sql
 Access your browser's address:
 
 ```
-http://localhost/bdr-backend/ex1/public/api
+http://localhost/bdr-backend/ex1/public/api/task
 ```
 
 or access the hosted system:
