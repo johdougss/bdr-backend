@@ -40,6 +40,13 @@ DB_USERNAME=homestead
 DB_PASSWORD=secret
 ```
 
+Database:
+[dump.sql](https://github.com/johnathansantos/bdr-backend/blob/master/ex1/db/dump.sql)
+```
+db/dump.sql
+```
+
+
 Generate APP_KEY
 ```
 $ php artisan key:generate
@@ -64,12 +71,6 @@ or set your virtual hosts:
         Allowoverride All
     </Directory>
 </VirtualHost>
-```
-
-In exercise 1 is required to include the database that is in the project root
-[dump.sql](https://github.com/johnathansantos/bdr-backend/blob/master/ex1/db/dump.sql)
-```
-db/dump.sql
 ```
 
 Access your browser's address:
