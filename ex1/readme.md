@@ -11,7 +11,7 @@ The system uses the framework laravel
 * MySQL
 
 
-### Install or Access [http://backend.johdoug.com/](http://backend.johdoug.com/)
+### Install or Access [http://backend.johdoug.com/api/task](http://backend.johdoug.com/api/task)
 Clone the repository to your Apache server.
 ```
 git clone https://github.com/johnathansantos/bdr-backend.git
@@ -79,7 +79,7 @@ http://localhost/bdr-backend/ex1/public/api/task
 ```
 
 or access the hosted system:
-[http://backend.johdoug.com/](http://backend.johdoug.com/)
+[http://backend.johdoug.com/api/task](http://backend.johdoug.com/api/task)
 
 
 
