@@ -48,12 +48,12 @@ class Handler extends ExceptionHandler
     {
 
 //        if ($request->ajax()) {
-        if ($e instanceof NotFoundHttpException) {
-            return response()->json([
-                'message' => 'not found',
-//                'message' => 'Are you a hacker or something? The task you were trying to edit doesn\'t exist.'
-            ], 404);
-        }
+//        if ($e instanceof NotFoundHttpException) {
+//            return response()->json([
+//                'message' => 'not found',
+////                'message' => 'Are you a hacker or something? The task you were trying to edit doesn\'t exist.'
+//            ], 404);
+//        }
 //        }
         return parent::render($request, $e);
     }
