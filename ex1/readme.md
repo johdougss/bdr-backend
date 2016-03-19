@@ -11,7 +11,7 @@ The system uses the framework laravel
 * MySQL
 
 
-### Install
+### Install or Access [http://backend.johdoug.com/](http://backend.johdoug.com/)
 Clone the repository to your Apache server.
 ```
 git clone https://github.com/johnathansantos/bdr-backend.git
@@ -22,6 +22,30 @@ Composer install
 ```
 $ composer install
 ```
+
+
+Config .env
+
+```
+$ cd ex1/
+$ cp .env.example .env
+```
+
+config database
+```
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=homestead
+DB_USERNAME=homestead
+DB_PASSWORD=secret
+```
+Generate APP_KEY
+```
+$ php artisan key:generate
+```
+
+
+
 
 In exercise 1 is required to include the database that is in the project root
 [dump.sql](https://github.com/johnathansantos/bdr-backend/blob/master/ex1/db/dump.sql)
