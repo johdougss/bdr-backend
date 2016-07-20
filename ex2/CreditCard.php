@@ -114,7 +114,7 @@ class CreditCard
      */
     function get()
     {
-        return @$this->_number;
+        return $this->_number;
     }
 
 }
